@@ -19,5 +19,9 @@ def nosotros():
 def admin_index():
     return render_template('admin/index.html')
 
+@app.route('/admin/login')
+def admin_login():
+    return render_template('admin/login.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
